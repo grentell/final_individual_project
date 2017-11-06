@@ -1,0 +1,17 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="workbookcontrolbox">
+	<div class="workbookcontrolbox_fullheight">
+		<div class="workbookcontrol draggable iconcontrol leftarrowcontrol">	
+		</div>
+		<div class="workbookcontrol draggable iconcontrol rightarrowcontrol">
+		</div>
+		<div class="workbookcontrol draggable iconcontrol uparrowcontrol">	
+		</div>
+		<div class="workbookcontrol draggable iconcontrol downarrowcontrol">
+		</div>
+		
+	</div>
+</div>
+
+<link rel="stylesheet" href="css/workbook/workbookcontrolbox.css" >

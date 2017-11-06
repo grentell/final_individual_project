@@ -1,0 +1,68 @@
+.workbookcontrol {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 10px;x
+	z-index: 666;
+}
+.workbookcontrol_included {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	
+	z-index: 666;
+}
+.workbookcontrol_filename {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: -10px;
+}
+.filecontrol {
+	background: url(../../images/file-text.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+.leftarrowcontrol {
+	background: url(../../images/leftarrow.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+.rightarrowcontrol {
+	background: url(../../images/rightarrow.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+.uparrowcontrol {
+	background: url(../../images/uparrow.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+.downarrowcontrol {
+	background: url(../../images/downarrow.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+}
+.workbookcontrolbox {
+	position: relative;
+	background: #888888;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	height: 100%;
+	overflow: hidden;
+}
+.workbookcontrolbox_fullheight {
+	position: absolute;
+	height: 100%;
+	width: 90px;
+	overflow-y: scroll;
+}

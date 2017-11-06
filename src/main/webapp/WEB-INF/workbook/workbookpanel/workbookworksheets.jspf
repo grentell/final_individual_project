@@ -1,0 +1,12 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="worksheets_list">
+	<input type="hidden" id="worksheet_current" name="worksheet_current" value="" />
+	<div id="worksheets_tabs">
+		<ul></ul>
+	</div>
+	<div class="worksheets_edit">
+		Edit Mode
+	</div>
+</div>
+<script type="text/javascript" src="js/worksheets.js"></script>

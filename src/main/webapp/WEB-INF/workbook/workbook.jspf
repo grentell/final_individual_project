@@ -1,0 +1,15 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="workbook_main">
+	<div class="workbook_controlbox">
+		<%@include file="workbookcontrolbox/workbookcontrolbox.jspf" %>
+	</div>
+	<div class="workbook">
+		<%@include file="workbookpanel/workbookpanel.jspf" %>
+	</div>
+	<div class="workbook_worksheets">
+		<%@include file="workbookpanel/workbookworksheets.jspf" %>
+	</div>
+</div>
+<link rel="stylesheet" href="css/workbook/workbook.css">
+<script type="text/javascript" src="js/controls.js"></script>

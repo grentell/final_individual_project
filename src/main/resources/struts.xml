@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="seng4800individual" extends="struts-default">
+		<action name="createFile" 
+			  class="com.crealom.files.fileManipulation.CreateFileAction" 
+			  method="execute">
+			  <result name="success">/testFilenameStore.jsp</result>
+		</action>
+		<action name="createIcon"
+				class="com.crealom.icons.iconmanipulation.CreateIconAction"
+				method="execute">
+				<result name="success">/testFilenameStore.jsp</result>
+		</action>
+		<action name="index"
+				class="com.crealom.TestWorkbookWebpageAction"
+				method="execute2">
+			
+		</action>
+		<action name="index2"
+				class="com.crealom.TestWorkbookWebpageAction"
+				method="execute">
+		</action>
+		<action name="objectdata"
+				class="com.crealom.files.fileManipulation.RecordObjectData"
+				method="execute">
+		</action>
+		<action name="downloadfile"
+				class="com.crealom.files.fileRetrieval.GetFileObject"
+				method="execute">
+		</action>
+		<action name="uploadfile"
+				class="com.crealom.files.fileRetrieval.PutFileObject"
+				method="execute">
+		</action>
+		<action name="deletefile"
+				class="com.crealom.files.fileManipulation.DeleteFile"
+				method="execute">
+		</action>
+		<action name="testuploadfile"
+				class="com.crealom.files.TestFileUpload"
+				method="execute">
+				<interceptor-ref name="fileUpload">  
+	                <param name="maximumSize">2097152</param>  
+	  
+	                <param name="allowedTypes">  
+	                    image/png,image/gif,image/jpeg,image/pjpeg  
+	                </param>  
+            	</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<result name="success">testdraganddroprec.jsp</result>
+		</action>
+		<action name="getworksheets"
+				class="com.crealom.workbook.ListWorksheetsAction"
+				method="execute">	
+		</action>
+   </package>
+</struts>

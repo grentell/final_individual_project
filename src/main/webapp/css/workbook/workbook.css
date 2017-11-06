@@ -1,0 +1,105 @@
+.workbook_main {
+	position: absolute;
+	top: 50px;
+	left: 5px;
+	bottom: 5px;
+	right: 0px;
+	display: table-cell;
+}
+.workbook {
+	position: absolute;
+	background: #555555;
+	
+	top: 95px;
+	left: 95px;
+	bottom: 0px;
+	right: 5px;
+	padding-bottom: 20px;
+	display: table-cell;
+}
+.workbook_controlbox {
+	position: absolute;
+	background: #555555;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 90px;
+	display: table-cell;
+	padding-bottom: 20px;
+}
+.worksheets_list {
+	position: absolute;
+	top: 0px;
+	height: 90px;
+	right: 5px;
+	left: 95px;
+	display: table-cell;
+	background: #555555;
+}
+.worksheets_edit {
+	position: absolute;
+	top:16px;
+	right:36px;
+	text-decoration: none;
+	color: #00F;
+	padding: 8px 8px 8px 8px;
+}
+div.edit_mode {
+	color: #F90;
+	background-color: #AAA;
+}
+.workbook_panel {
+	position: relative;
+	background: #888888;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	height: 100%;
+	overflow: scroll;
+}
+.workbook_panel_fullheight {
+	position: absolute;
+	background: #ffffff;
+	height: 1000px;
+	width: 1000px;
+}
+#worksheets_tabs {
+	height: auto;
+	padding: 8px 0px;
+	margin: 0px;
+}
+.worksheet_tab {
+	display: inline;
+	padding: 20px;
+}
+.worksheet_tab a {
+	text-decoration: none;
+	color: #00F;
+	padding: 8px 8px 8px 8px;
+}
+.worksheet_tab .worksheet_selected {
+	color: #F90;
+	background-color: #AAA;
+}
+.workbook_dropdownload {
+	position: absolute;
+	background: #555555;
+	
+	left: 95px;
+	bottom: 0px;
+	width: 400px;
+	display: table-cell;
+	outline: 2px dashed black;
+	outline-offset: -10px;
+	height: 90px;
+}
+.workbook_download {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.downloadbox_file {
+	display: none;
+}

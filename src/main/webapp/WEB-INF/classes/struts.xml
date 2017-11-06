@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="seng4800individual" extends="struts-default">
+		<action name="createFile" 
+			  class="com.crealom.files.fileManipulation.CreateFileAction" 
+			  method="execute">
+			  <result name="success">/testFilenameStore.jsp</result>
+		</action>
+		<action name="index"
+				class="com.crealom.TestWorkbookWebpageAction"
+				method="execute2">
+			
+		</action>
+		<action name="index2"
+				class="com.crealom.TestWorkbookWebpageAction"
+				method="execute">
+		</action>
+		<action name="objectdata"
+				class="com.crealom.files.fileManipulation.RecordObjectData"
+				method="execute">
+		</action>
+   </package>
+</struts>
